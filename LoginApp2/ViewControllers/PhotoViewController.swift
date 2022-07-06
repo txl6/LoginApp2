@@ -8,16 +8,17 @@
 import UIKit
 
 class PhotoViewController: UIViewController {
-
-    @IBOutlet var CatLabel: UILabel!
-    var cat = ""
+    
+    @IBOutlet weak var catImage: UIImageView!
+    @IBOutlet weak var catImageTwo: UIImageView!
+    
+    var catOne: String?
+    var catTwo: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      //  CatLabel.text = cat
+        catImage.image = UIImage(named: catOne ?? "")
+        catImageTwo.image = UIImage(named: catTwo ?? "")
     }
-    
-
    
 }

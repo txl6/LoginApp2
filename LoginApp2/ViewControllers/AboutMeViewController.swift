@@ -16,13 +16,14 @@ class AboutMeViewController: UIViewController {
     @IBOutlet var hobiesLabel: UILabel!
     @IBOutlet var petsLabel: UILabel!
     
-    
     var user = ""
     var firstName = ""
     var secondName = ""
     var age = ""
     var hobies = ""
     var cat = ""
+    
+    private let data = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,11 @@ class AboutMeViewController: UIViewController {
         petsLabel.text = "Животные: \(cat)"
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let desctinationVC = segue.destination as? PhotoViewController
+        desctinationVC?.catOne = data.person.imageOne
+        desctinationVC?.catTwo = data.person.imageSecond
+    }
+
     
 }
