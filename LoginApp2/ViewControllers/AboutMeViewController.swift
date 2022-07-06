@@ -8,22 +8,32 @@
 import UIKit
 
 class AboutMeViewController: UIViewController {
-
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var firstNameLabel: UILabel!
+    @IBOutlet var secondNameLabel: UILabel!
+    @IBOutlet var ageLabel: UILabel!
+    @IBOutlet var hobiesLabel: UILabel!
+    @IBOutlet var petsLabel: UILabel!
+    
+    
+    var user = ""
+    var firstName = ""
+    var secondName = ""
+    var age = ""
+    var hobies = ""
+    var cat = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameLabel.text = user
+        firstNameLabel.text = "Имя: \(firstName)"
+        secondNameLabel.text = "Фамилия: \(secondName)"
+        ageLabel.text = "Возраст: \(age)"
+        hobiesLabel.text = "Увлечения: \(hobies)"
+        petsLabel.text = "Животные: \(cat)"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
