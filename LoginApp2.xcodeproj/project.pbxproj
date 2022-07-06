@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		5636D8C02874830500E9FABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D8BF2874830500E9FABE /* AppDelegate.swift */; };
 		5636D8C22874830500E9FABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D8C12874830500E9FABE /* SceneDelegate.swift */; };
-		5636D8C42874830500E9FABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D8C32874830500E9FABE /* ViewController.swift */; };
+		5636D8C42874830500E9FABE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D8C32874830500E9FABE /* LoginViewController.swift */; };
 		5636D8C72874830500E9FABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5636D8C52874830500E9FABE /* Main.storyboard */; };
 		5636D8C92874830900E9FABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5636D8C82874830900E9FABE /* Assets.xcassets */; };
 		5636D8CC2874830900E9FABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5636D8CA2874830900E9FABE /* LaunchScreen.storyboard */; };
+		5645FA6C287488430077BEAC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645FA6B287488430077BEAC /* WelcomeViewController.swift */; };
+		5645FA6E287488830077BEAC /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645FA6D287488830077BEAC /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5636D8BC2874830500E9FABE /* LoginApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5636D8BF2874830500E9FABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5636D8C12874830500E9FABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5636D8C32874830500E9FABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5636D8C32874830500E9FABE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5636D8C62874830500E9FABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5636D8C82874830900E9FABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5636D8CB2874830900E9FABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5636D8CD2874830900E9FABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5645FA6B287488430077BEAC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5645FA6D287488830077BEAC /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		5636D8BE2874830500E9FABE /* LoginApp2 */ = {
 			isa = PBXGroup;
 			children = (
-				5636D8BF2874830500E9FABE /* AppDelegate.swift */,
-				5636D8C12874830500E9FABE /* SceneDelegate.swift */,
-				5636D8C32874830500E9FABE /* ViewController.swift */,
-				5636D8C52874830500E9FABE /* Main.storyboard */,
-				5636D8C82874830900E9FABE /* Assets.xcassets */,
-				5636D8CA2874830900E9FABE /* LaunchScreen.storyboard */,
-				5636D8CD2874830900E9FABE /* Info.plist */,
+				5636D8D42874831D00E9FABE /* ViewControllers */,
+				5636D8D52874832D00E9FABE /* Storyboards */,
+				5636D8D62874833C00E9FABE /* Resources */,
+				5636D8D32874831500E9FABE /* App */,
 			);
 			path = LoginApp2;
+			sourceTree = "<group>";
+		};
+		5636D8D32874831500E9FABE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5636D8BF2874830500E9FABE /* AppDelegate.swift */,
+				5636D8C12874830500E9FABE /* SceneDelegate.swift */,
+				5636D8CD2874830900E9FABE /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5636D8D42874831D00E9FABE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5636D8C32874830500E9FABE /* LoginViewController.swift */,
+				5645FA6B287488430077BEAC /* WelcomeViewController.swift */,
+				5645FA6D287488830077BEAC /* AboutMeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5636D8D52874832D00E9FABE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5636D8C52874830500E9FABE /* Main.storyboard */,
+				5636D8CA2874830900E9FABE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5636D8D62874833C00E9FABE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5636D8C82874830900E9FABE /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5636D8C42874830500E9FABE /* ViewController.swift in Sources */,
+				5636D8C42874830500E9FABE /* LoginViewController.swift in Sources */,
+				5645FA6E287488830077BEAC /* AboutMeViewController.swift in Sources */,
+				5645FA6C287488430077BEAC /* WelcomeViewController.swift in Sources */,
 				5636D8C02874830500E9FABE /* AppDelegate.swift in Sources */,
 				5636D8C22874830500E9FABE /* SceneDelegate.swift in Sources */,
 			);
@@ -289,10 +329,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 97LPR2242T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp2/Info.plist;
+				INFOPLIST_FILE = LoginApp2/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +345,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,10 +358,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 97LPR2242T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp2/Info.plist;
+				INFOPLIST_FILE = LoginApp2/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +374,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
